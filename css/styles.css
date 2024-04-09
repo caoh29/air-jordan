@@ -4,480 +4,371 @@ html {
 }
 
 body {
-    font-family: 'Hedvig Letters Serif', serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  p {
-    margin: 0;
-    text-align: justify;
-    line-height: 2.5;
-  }
-  
-  footer {
-    padding: 47px 50px;
-    background-color: white;
-    border-top: 1px solid black;
-  }
-  
-  footer p {
-    text-align: center;
-  }
-  
-  main {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-  }
+  font-family: 'Hedvig Letters Serif', serif;
+  margin: 0;
+  padding: 0;
+}
 
-  header {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    align-items: center;
-  }
-  
+img {
+  max-width: 450px;
+  height: auto;
+}
 
-  nav {
-    padding: 20px 200px;
-    position: sticky;
-    top: 0;
-    background-color: white;
-  }
+p {
+  margin: 0;
+  text-align: justify;
+  line-height: 2.5;
+}
 
-  header a{
-    transition: transform 0.3s;
-  }
+footer {
+  padding: 47px 50px;
+  background-color: white;
+  border-top: 1px solid black;
+}
 
-  header a:hover {
-    font-size: 1.2rem;
-  }
+footer p {
+  text-align: center;
+}
 
-  button {
-    border: 2px solid white;
-    padding: 15px 20px;
-    font-size: 12px;
-    font-family: 'Hedvig Letters Serif', serif;
-    color: white;
-    background-color: black;
-    transition: all 0.5s cubic-bezier(0.5, 0, 0, 1) 0s;
-  }
-  
-  button:hover {
-    border: 2px solid black;
-    color: black;
-    background-color: white;
-    cursor: pointer;
-    scale: 1.1;
-  }
-  
-  form {
-    padding: 20px 20px;
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    background-color: rgba(75, 75, 75, 0.5); /* Grey color with 50% transparency */
-    border: 1px solid #ccc; /* Add border for better visibility */
-    padding: 5px; /* Add padding for better appearance */
-    border-radius: 4px; /* Add rounded corners */
-  }
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
 
-  form input,textarea {
-    background-color: rgba(169, 169, 169, 0.5); /* Grey color with 50% transparency */
-    border: 1px solid #ccc; /* Add border for better visibility */
-    padding: 5px; /* Add padding for better appearance */
-    border-radius: 4px; /* Add rounded corners */
-  } 
 
-  form input[type="submit"] {
-    background-color: #999;
-    background-image: linear-gradient(to bottom, #ccc, #999);
-    border: 1px solid #666;
-    color: #fff;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+nav {
+  padding: 20px 20px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav_logo {
+  padding: 20px 80px;
+  width: 70px;
+  transition: transform 0.3s;
+}
+
+.nav_logo:hover {
+  transform: scale(1.2);
+}
+
+header a {
+  transition: transform 0.3s;
+}
+
+header a:hover {
+  font-size: 1.2rem;
+}
+
+form {
+  padding: 20px 20px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: rgba(75, 75, 75, 0.5);
+  /* Grey color with 50% transparency */
+  border: 1px solid #ccc;
+  /* Add border for better visibility */
+  padding: 5px;
+  /* Add padding for better appearance */
+  border-radius: 4px;
+  /* Add rounded corners */
+}
+
+form input,
+textarea {
+  background-color: rgba(169, 169, 169, 0.5);
+  /* Grey color with 50% transparency */
+  border: 1px solid #ccc;
+  /* Add border for better visibility */
+  padding: 5px;
+  /* Add padding for better appearance */
+  border-radius: 4px;
+  /* Add rounded corners */
+}
+
+form input[type="submit"] {
+  background-color: #999;
+  background-image: linear-gradient(to bottom, #ccc, #999);
+  border: 1px solid #666;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 form input[type="submit"]:hover {
-    background-image: linear-gradient(to bottom, #999, #ccc);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  background-image: linear-gradient(to bottom, #999, #ccc);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
 }
 
 form input[type="submit"]:active {
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
 }
-  
-  label {
-    font-size: 16px;
-  }
-  
-  input,
-  textarea {
-    padding: 10px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  input[type="submit"] {
-    width: 200px;
-    background-color: black;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.5s ease;
-    align-self: center;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: white;
-    color: black;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    display: flex;
-    gap: 100px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  .nav_logo {
-    padding: 20px 80px;
-    width: 70px;
-    transition: transform 0.3s;
-  }
-  
-  .nav_logo:hover {
-    transform: scale(1.2);
-  }
-  
-  .promotion-details {
-    display: flex;
-    min-height: 50px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    background-color: black;
-    color: white;
-  
-    overflow: hidden;
-  }
-  
-  .slider-container {
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  .slider-container ul {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    animation: slide 15s linear infinite; 
-  }
-  
-  .slider-container ul li {
-    list-style: none;
-    flex: 0 0 auto;
-    width: 100%;
-    padding: 10px;
-  }
-  
-  .explore {
-    background-image: url(/images/nike_mags_1.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-origin: border-box;
-    background-position-y: center;
-    min-height: 70vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-  }
-  
-  .explore h1 {
-    color: rgb(255, 255, 255);
-    text-shadow: 0 0 10px rgba(0, 0, 255, 1),
-        0 0 20px rgba(0, 0, 255, 1),
-        0 0 30px rgba(0, 0, 255, 1),
-        0 0 40px rgba(255, 0, 0, 1),
-        0 0 50px rgba(255, 0, 0, 1);
-  }
 
-  .setion-image {
-    width: 450px;
+label {
+  font-size: 16px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  width: 200px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  align-self: center;
+}
+
+input[type="submit"]:hover {
+  background-color: white;
+  color: black;
+}
+
+
+.promotion-details {
+  display: flex;
+  min-height: 50px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  background-color: black;
+  color: white;
+
+  overflow: hidden;
+}
+
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-container ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  animation: slide 15s linear infinite;
+}
+
+.slider-container ul li {
+  list-style: none;
+  flex: 0 0 auto;
+  width: 100%;
+  padding: 10px;
+}
+
+.explore {
+  background-image: url(/images/nike_mags_1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+  background-position-y: center;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.explore h1 {
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 10px rgba(0, 0, 255, 1),
+    0 0 20px rgba(0, 0, 255, 1),
+    0 0 30px rgba(0, 0, 255, 1),
+    0 0 40px rgba(255, 0, 0, 1),
+    0 0 50px rgba(255, 0, 0, 1);
+}
+
+.setion-image {
+  width: 450px;
+}
+
+.post {
+  padding: 10vh 10vw;
+  background-color: rgb(255, 255, 255);
+}
+
+.post h2 {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+#mags-video{
+  max-width: 400px;
+}
+
+.album {
+  text-align: center;
+  padding: 10vh 10vw;
+  background-color: black;
+  color: white;
+}
+
+.album ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 50px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.album figcaption {
+  margin: 20px;
+  font-style: italic;
+  font-size: 22px;
+}
+
+
+
+.product-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  flex: 1;
+  padding: 10px;
+}
+
+
+
+.section-image {
+  width: 100%;
+  height: auto;
+}
+
+
+
+#products {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+
+#products article {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+#products article:nth-child(odd) {
+  color: white;
+  background-color: black;
+}
+
+#products article:nth-child(even) {
+  background-color: wheat;
+}
+
+#products article figure {
+  margin: 0;
+}
+
+#products article figure img {
+  border-radius: 50%;
+}
+
+#products article h2,
+#products article p {
+  grid-column: 2;
+}
+
+#contact {
+  color: white;
+  height: 70vh;
+  padding: 20px;
+  background-image: url(/images/laura-cleffmann-rL6q_Y5uBLs-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+  background-position-y: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Add these styles for the social media links */
+#contact .social-links {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+#contact .social-links a img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+#contact .social-links a:hover img {
+  transform: scale(1.5);
+}
+
+/* custom responsive styles here */
+@media only screen and (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
   }
-  
-  .post {
-    padding: 10vh 10vw;
-    background-color: rgb(255, 255, 255);
+  nav ul li {
+      margin-bottom: 10px;
   }
-  
-  .post h2 {
-    text-align: center;
-  }
-  
+}
+
+/* Adjust the layout of the album section for smaller screens */
+@media only screen and (max-width: 768px) {
   .album {
-    text-align: center;
-    padding: 10vh 10vw;
-    background-color: black;
-    color: white;
-  }
-  
-  .album ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 50px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .album figcaption {
-    margin: 20px;
-    font-style: italic;
-    font-size: 22px;
-  }
-  
-  
-  #products {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-  }
-  
-  
-  #products article {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  #products article:nth-child(odd) {
-    color: white;
-    background-color: black;
-  }
-  
-  #products article:nth-child(even) {
-    background-color: wheat;
-  } 
-  
-  #products article figure {
-    margin: 0;
-  }
-  
-  #products article figure img {
-    border-radius: 50%;
-  }
-  
-  #products article h2, #products article p {
-    grid-column: 2;
-  }
-  
-  
-  #feedback .feedback-form {
-    background-image: url(./images/horse-background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-origin: border-box;
-    background-position-y: center;
-    min-height: 70vh;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-shadow: 0px 1px black;
-  }
-  
-  #feedback .feedback-form input[type="submit"] {
-    margin-top: 50px;
-  }
-  
-  #feedback .reviews {
-    min-height: 70vh;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    color: white;
-    text-shadow: 0px 1px black;
-  }
-  
-  #about {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  #about section {
-    padding: 50px 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  #about section h2, #about section p, #about section div{
-    max-width: 800px;
-    margin: 15px 15px;
-  }
-  
-  #about section:nth-child(even) {
-    background-color: black;
-    color: white;
-  }
-  
-  #about section:nth-child(1) {
-    background-color: wheat;
-  }
-  
-  #about .certifications-logos, .awards-logos {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 15px;
-  }
-  
-  #about .certifications-logos img, .awards-logos img {
-    max-width: 100px;
-    max-height: 100px;
-  }
-  
-  #about .awards-logos figure {
-    margin: 0;
-  }
-  
-  #about .training-photo img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  #contact {
-    color: white;
-    height: 70vh;
-    padding: 20px;
-    background-image: url(/images/laura-cleffmann-rL6q_Y5uBLs-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-origin: border-box;
-    background-position-y: center;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  /* Add these styles for the social media links */
-  #contact .social-links {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 25px;
-  }
-  
-  #contact .social-links a img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    transition: transform 0.3s ease;
-  }
-  
-  #contact .social-links a:hover img {
-    transform: scale(1.5);
-  }
-  
-  @media screen and (min-width: 1024px) {
-    .post {
-      padding: 15vh 30vw;
-    }
-  
-    #products article {
       padding: 20px;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: 0.25fr 1fr;
-      gap: 20px;
-    }
-    
-    #products article figure {
-      margin: 0;
-      grid-column: 1;
-      grid-row: 1 / span 2;
-      align-self: center;
-    }
-    
-    #products article h2, #products article p {
-      grid-column: 2;
-    }
-  
-    #products article figure img {
-      max-height: 500px;
-    }
-  
-    #products article p {
-      align-self: flex-start;
-    }
   }
-  
-  @media all and (min-width: 1280px) {
-    .explore {
-      background-position-y: 25%;
-    }
+  .product-section {
+      display: flex;
+      flex-direction: column;
   }
-  
-  @keyframes slide {
-    0% {
-      transform: translateX(0%);
-    }
-    25% {
-      transform: translateX(0%);
-    }
-    50% {
-      transform: translateX(-100%);
-    }
-    75% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(0%);
-    }
+  .item {
+      margin-bottom: 20px;
   }
-  
+}
