@@ -1,1 +1,125 @@
+img {
+  max-width: 450px;
+  height: auto;
+}
 
+p {
+  margin: 0;
+  text-align: justify;
+  line-height: 2.5;
+}
+
+.promotion-details {
+  display: flex;
+  min-height: 50px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  background-color: black;
+  color: white;
+
+  overflow: hidden;
+}
+
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-container ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  animation: slide 15s linear infinite;
+}
+
+.slider-container ul li {
+  list-style: none;
+  flex: 0 0 auto;
+  width: 100%;
+  padding: 10px;
+}
+
+.explore {
+  background-image: url(/images/nike_mags_1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+  background-position-y: center;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.explore h1 {
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 10px rgba(0, 0, 255, 1),
+    0 0 20px rgba(0, 0, 255, 1),
+    0 0 30px rgba(0, 0, 255, 1),
+    0 0 40px rgba(255, 0, 0, 1),
+    0 0 50px rgba(255, 0, 0, 1);
+}
+
+.setion-image {
+  width: 450px;
+}
+
+.post {
+  padding: 10vh 10vw;
+  background-color: rgb(255, 255, 255);
+}
+
+.post h2 {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+#mags-video {
+  max-width: 400px;
+}
+
+.album {
+  text-align: center;
+  padding: 10vh 10vw;
+  background-color: black;
+  color: white;
+}
+
+.album ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 50px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.album figcaption {
+  margin: 20px;
+  font-style: italic;
+  font-size: 22px;
+}
+
+.product-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  flex: 1;
+  padding: 10px;
+}
+
+.section-image {
+  width: 100%;
+  height: auto;
+}

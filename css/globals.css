@@ -1,4 +1,7 @@
 /* GLOBALS */
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: 'Hedvig Letters Serif', serif;

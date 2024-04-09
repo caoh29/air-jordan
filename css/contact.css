@@ -1,0 +1,121 @@
+
+  img {
+    max-width: 450px;
+    height: auto;
+  }
+  
+  p {
+    margin: 0;
+    text-align: justify;
+    line-height: 2.5;
+  }
+  
+  form {
+    padding: 20px 20px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(75, 75, 75, 0.5);
+    /* Grey color with 50% transparency */
+    border: 1px solid #ccc;
+    /* Add border for better visibility */
+    padding: 5px;
+    /* Add padding for better appearance */
+    border-radius: 4px;
+    /* Add rounded corners */
+  }
+  
+  form input,
+  textarea {
+    background-color: rgba(169, 169, 169, 0.5);
+    /* Grey color with 50% transparency */
+    border: 1px solid #ccc;
+    /* Add border for better visibility */
+    padding: 5px;
+    /* Add padding for better appearance */
+    border-radius: 4px;
+    /* Add rounded corners */
+  }
+  
+  form input[type="submit"] {
+    background-color: #999;
+    background-image: linear-gradient(to bottom, #ccc, #999);
+    border: 1px solid #666;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  form input[type="submit"]:hover {
+    background-image: linear-gradient(to bottom, #999, #ccc);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  form input[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+  }
+  
+  label {
+    font-size: 16px;
+  }
+  
+  input,
+  textarea {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input[type="submit"] {
+    width: 200px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    align-self: center;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: white;
+    color: black;
+  }
+
+  #contact {
+    color: white;
+    height: 70vh;
+    padding: 20px;
+    background-image: url(/images/laura-cleffmann-rL6q_Y5uBLs-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: border-box;
+    background-position-y: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Add these styles for the social media links */
+  #contact .social-links {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+  }
+  
+  #contact .social-links a img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  #contact .social-links a:hover img {
+    transform: scale(1.5);
+  }
+  
