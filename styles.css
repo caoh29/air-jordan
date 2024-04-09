@@ -110,8 +110,6 @@ body {
   .logo {
     padding: 5px;
     width: 50px;
-    border-radius: 50%;
-    border: 2px dotted black;
   }
   
   .promotion-details {
@@ -147,7 +145,7 @@ body {
   }
   
   .explore {
-    background-image: url(./images/arabian-background.webp);
+    background-image: url(./images/nike_mags_1.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-origin: border-box;
@@ -168,7 +166,7 @@ body {
   
   .post {
     padding: 10vh 10vw;
-    background-color: wheat;
+    background-color: rgb(255, 255, 255);
   }
   
   .post h2 {
