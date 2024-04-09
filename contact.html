@@ -4,8 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="./images/logo.png">
+    <!-- Add our reset from here: https://meyerweb.com/eric/tools/css/reset/ -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- Add the normalization.css, get it from: https://necolas.github.io/normalize.css/-->
+    <link rel="stylesheet" href="./css/normalization.css">
+    <!-- Add our CSS file  -->
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap"
@@ -15,19 +20,19 @@
 
 <body>
 	<header>
-		<div class="logo_wrapper">
-			<img class="logo" src="./images/logo.jpg" alt="logo">
-		</div>
-		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="product.html">Shop Shoes</a></li>
-				<li><a href="feedback.html">Give us feedback</a></li>
-				<li><a href="about.html">Who are we?</a></li>
-				<li><a href="contact.html">Contact us</a></li>
-			</ul>
-		</nav>
-	</header>
+        <div>
+            <img class="nav_logo" src="./images/logo.png" alt="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><input type="text" placeholder="Search.."></li>
+            </ul>
+        </nav>
+    </header>
   <main id="contact">
     <header>
         <div class="logo_wrapper">
