@@ -38,7 +38,7 @@ body {
     top: 0;
     background-color: white;
   }
-  
+
   button {
     border: 2px solid white;
     padding: 15px 20px;
@@ -145,7 +145,7 @@ body {
   }
   
   .explore {
-    background-image: url(./images/nike_mags_1.jpeg);
+    background-image: url(/images/nike_mags_1.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-origin: border-box;
