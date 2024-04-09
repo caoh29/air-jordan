@@ -19,9 +19,9 @@
   text-shadow: 0px 1px black;
 }
 
-.post {
+.hero {
   padding: 10vh 10vw;
-  background-color: wheat;
+  background: linear-gradient(wheat, #F3F1E0);
 }
 
 .post h2 {
@@ -96,8 +96,24 @@
 
 
 @media screen and (min-width: 1024px) {
+  .hero {
+    padding: 10vh 10vw;
+    background-color: wheat;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+  }
+  
+  .hero figure {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
   .post {
-    padding: 15vh 30vw;
+    grid-column: 2;
+    grid-row: 1;
   }
 }
 
