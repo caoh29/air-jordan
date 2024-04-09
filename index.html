@@ -48,52 +48,81 @@
 		</section>
 		<section class="album">
 			<h2>FEATURED COLLECTION</h2>
-			<ul>
-				<li>
-					<figure>
-						<img src="./images/heels.jpg" alt="Heels">
-						<figcaption>
-							Heels 
-						</figcaption>
-					</figure>
-				</li>
-				<li>
-					<figure>
-						<img src="./images/sneakers.jpg" alt="Sneakers">
-						<figcaption>
-							Sneakers
-						</figcaption>
-					</figure>
-				</li>
-				<li>
-					<figure>
-						<img src="./images/boots.jpg" alt="Boots">
-						<figcaption>
-							Boots
-						</figcaption>
-					</figure>
-				</li>
-				<li>
-					<figure>
-						<img src="./images/flats.jpg" alt="Flats">
-						<figcaption>
-							Flats
-						</figcaption>
-					</figure>
-				</li>
-				<li>
-					<figure>
-						<img src="./images/loafers.jpg" alt="Loafers">
-						<figcaption>
-							Loafers
-						</figcaption>
-					</figure>
-				</li>
-			</ul>
+			<div class="slideshow-container">
+				<ul class="slides">
+					<li class="slide">
+						<figure>
+							<img src="./images/nike_dunk.png" alt="Heels">
+							<figcaption>
+								Heels 
+							</figcaption>
+						</figure>
+					</li>
+					<li class="slide">
+						<figure>
+							<img src="./images/adidas_galaxy.avif" alt="Sneakers">
+							<figcaption>
+								Sneakers
+							</figcaption>
+						</figure>
+					</li>
+					<li class="slide">
+						<figure>
+							<img src="./images/boots.jpg" alt="Boots">
+							<figcaption>
+								Boots
+							</figcaption>
+						</figure>
+					</li>
+					<li class="slide">
+						<figure>
+							<img src="./images/flats.jpg" alt="Flats">
+							<figcaption>
+								Flats
+							</figcaption>
+						</figure>
+					</li>
+					<li class="slide">
+						<figure>
+							<img src="./images/loafers.jpg" alt="Loafers">
+							<figcaption>
+								Loafers
+							</figcaption>
+						</figure>
+					</li>
+				</ul>
+				<button class="prev" onclick="changeSlide(-1)">❮</button>
+				<button class="next" onclick="changeSlide(1)">❯</button>
+			</div>
 		</section>
 	</main>
 	<footer>
 		<p>&copy; 2024 Drizzle Shoes. All rights reserved.</p>
 	</footer>
+	<script>
+		let slideIndex = 0;
+
+		function showSlides() {
+			const slides = document.querySelectorAll('.slide');
+			if (slideIndex >= slides.length) {
+				slideIndex = 0;
+			}
+			if (slideIndex < 0) {
+				slideIndex = slides.length - 1;
+			}
+			slides.forEach(slide => {
+				slide.style.display = 'none';
+			});
+			slides[slideIndex].style.display = 'block';
+		}
+
+		function changeSlide(n) {
+			slideIndex += n;
+			showSlides();
+		}
+
+		showSlides();
+
+	</script>
 </body>
 </html>
