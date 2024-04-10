@@ -80,7 +80,7 @@ p {
 }
 
 #mags-video {
-  max-width: 400px;
+  max-width: 100%;
 }
 
 .album {
@@ -120,6 +120,17 @@ p {
 }
 
 .section-image {
-  width: 100%;
+  max-width: 100%;
   height: auto;
+}
+
+/* Media query for screens 768px and below */
+@media (max-width: 768px) {
+  .product-section {
+    flex-direction: column;
+  }
+
+  .item {
+    max-width: 100%;
+  }
 }
