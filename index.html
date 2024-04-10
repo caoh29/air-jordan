@@ -37,62 +37,86 @@
 				<button>EXPLORE THE LATEST COLLECTION</button>
 			</a>
 		</section>
-		<section class="post">
-			<h2>Footwear Elegance: Unleashing the Style of Premium Shoes</h2>
-			<p>
-				Welcome to Shoe Emporium, where the world of luxury shoes unfolds in all its fashionable splendor. 
-				Our curated selection showcases premium footwear, 
-				combining centuries of craftsmanship with the essence of refined style. 
-				From classic leather designs to trendy sneakers, 
-				each shoe embodies a legacy of excellence. 
-				At Shoe Emporium, we offer more than just footwear; 
-				we present fashion statements, 
-				inviting you to embrace comfort without compromising on style. 
-				Explore our collection and discover the epitome of footwear where luxury meets comfort.
-			</p>
+		<section class="hero">
+			<div class="post">
+				<h2>Footwear Elegance: Unleashing the Style of Premium Shoes</h2>
+				<p>
+					Welcome to Shoe Emporium, where the world of luxury shoes unfolds in all its fashionable splendor. 
+					Our curated selection showcases premium footwear, 
+					combining centuries of craftsmanship with the essence of refined style. 
+					From classic leather designs to trendy sneakers, 
+					each shoe embodies a legacy of excellence. 
+					At Shoe Emporium, we offer more than just footwear; 
+					we present fashion statements, 
+					inviting you to embrace comfort without compromising on style. 
+					Explore our collection and discover the epitome of footwear where luxury meets comfort.
+				</p>
+			</div>
+			<figure>
+				<img src="./images/adidas_galaxy.avif" alt="Heels">
+			</figure>
 		</section>
 		<section class="album">
 			<h2>FEATURED COLLECTION</h2>
+			<div class="slideshow-container">
+				<ul class="slides">
+					<li class="slide">
+						<figure>
+							<img src="./images/nike_dunk.png" alt="Heels">
+							<figcaption>
+								Heels 
+							</figcaption>
+						</figure>
+					</li>
+					<li class="slide">
+						<figure>
+							<img src="./images/adidas_galaxy.avif" alt="Sneakers">
+							<figcaption>
+								Sneakers
+							</figcaption>
+						</figure>
+					</li>
+					<li class="slide">
+						<figure>
+							<img src="./images/boots.jpg" alt="Boots">
+							<figcaption>
+								Boots
+							</figcaption>
+						</figure>
+					</li>
+					<li class="slide">
+						<figure>
+							<img src="./images/flats.jpg" alt="Flats">
+							<figcaption>
+								Flats
+							</figcaption>
+						</figure>
+					</li>
+					<li class="slide">
+						<figure>
+							<img src="./images/loafers.jpg" alt="Loafers">
+							<figcaption>
+								Loafers
+							</figcaption>
+						</figure>
+					</li>
+				</ul>
+				<button class="prev" onclick="changeSlide(-1)">❮</button>
+				<button class="next" onclick="changeSlide(1)">❯</button>
+			</div>
+		</section>
+		<section class="reviews">
 			<ul>
 				<li>
-					<figure>
-						<img src="./images/heels.jpg" alt="Heels">
-						<figcaption>
-							Heels 
-						</figcaption>
-					</figure>
-				</li>
-				<li>
-					<figure>
-						<img src="./images/sneakers.jpg" alt="Sneakers">
-						<figcaption>
-							Sneakers
-						</figcaption>
-					</figure>
-				</li>
-				<li>
-					<figure>
-						<img src="./images/boots.jpg" alt="Boots">
-						<figcaption>
-							Boots
-						</figcaption>
-					</figure>
-				</li>
-				<li>
-					<figure>
-						<img src="./images/flats.jpg" alt="Flats">
-						<figcaption>
-							Flats
-						</figcaption>
-					</figure>
-				</li>
-				<li>
-					<figure>
-						<img src="./images/loafers.jpg" alt="Loafers">
-						<figcaption>
-							Loafers
-						</figcaption>
-					</figure>
+					<article>
+						<figure>
+							<img src="" alt="avatar">
+						</figure>
+						<header>
+							<h4>Excelent service!</h4>
+						</header>
+						<p>I recive it and it was amazing!</p>
+					</article>
 				</li>
 			</ul>
 		</section>
@@ -100,5 +124,30 @@
 	<footer>
 		<p>&copy; 2024 Drizzle Shoes. All rights reserved.</p>
 	</footer>
+	<script>
+		let slideIndex = 0;
+
+		function showSlides() {
+			const slides = document.querySelectorAll('.slide');
+			if (slideIndex >= slides.length) {
+				slideIndex = 0;
+			}
+			if (slideIndex < 0) {
+				slideIndex = slides.length - 1;
+			}
+			slides.forEach(slide => {
+				slide.style.display = 'none';
+			});
+			slides[slideIndex].style.display = 'block';
+		}
+
+		function changeSlide(n) {
+			slideIndex += n;
+			showSlides();
+		}
+
+		showSlides();
+
+	</script>
 </body>
 </html>

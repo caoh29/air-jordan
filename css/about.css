@@ -1,0 +1,53 @@
+
+#about {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#about section {
+  padding: 50px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about section h2, #about section p, #about section div{
+  max-width: 800px;
+  margin: 15px 15px;
+}
+
+#about section:nth-child(even) {
+  background-color: black;
+  color: white;
+}
+
+#about section:nth-child(1) {
+  background-color: wheat;
+}
+
+#about .certifications-logos, .awards-logos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 15px;
+}
+
+#about .certifications-logos img, .awards-logos img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+#about .awards-logos figure {
+  margin: 0;
+}
+
+#about .training-photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
