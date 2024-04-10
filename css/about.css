@@ -1,0 +1,64 @@
+
+#about {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#about section {
+  padding: 3rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about section h2{
+  font-size: x-large;
+  font-weight: 700;
+}
+
+#about section h2, #about section p{
+  max-width: 800px;
+  margin: 1rem;
+}
+
+#about section:nth-child(odd) {
+  background-color: black;
+  color: white;
+}
+
+#about section:first-child {
+  background-color: wheat;
+  color: black;
+}
+
+#about .company-history figure, #about .quality figure {
+  max-width: 800px;
+  padding: 1rem;
+}
+
+#about .company-history figure img, #about .quality figure img {
+  width: fit-content;
+}
+
+#about .innovation .innovation-pictures {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  max-width: 800px;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+#about .innovation .innovation-pictures figure:first-child {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#about .innovation .innovation-pictures figure:last-child {
+  grid-column: 2;
+  grid-row: 1;
+}
