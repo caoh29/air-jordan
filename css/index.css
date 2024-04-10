@@ -15,18 +15,27 @@
 }
 
 .explore h3 {
+  padding: 1rem;
   color: white;
   text-shadow: 0px 1px black;
 }
 
 .hero {
-  padding: 10vh 10vw;
+  padding: 2rem;
   background: linear-gradient(wheat, #F3F1E0);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
 }
 
 .hero figure {
   border-radius: 50%;
   overflow: hidden;
+  width: 60%;
+  height: 75%;
 }
 
 .hero figure img {
@@ -35,62 +44,71 @@
   object-fit: cover;
 }
 
-.post h2 {
-  text-align: center;
-}
-
-.reviews {
-  padding: 10vh 10vw;
-  background: linear-gradient(wheat, #F3F1E0);
-}
-
-/* .album {
-  text-align: center;
-  padding: 10vh 10vw;
-  background-color: white;
-  color: black;
-}
-
-.album ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.hero .post {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  gap: 50px;
-  text-align: center;
+  flex-wrap: nowrap;
+  align-items: center;
   justify-content: center;
+}
+
+.hero .post h3 {
+  font-weight: 600;
+}
+
+.hero .post h1 {
+  font-weight: 900;
+  font-stretch: expanded;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.hero .post p {
+  margin-bottom: 2rem;
+}
+
+.hero .post button {
+  margin-bottom: 2rem;
+}
+
+.album {
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-.album figcaption {
-  margin: 20px;
-  font-style: italic;
-  font-size: 22px;
-} */
+.album h2 {
+  font-weight: 700;
+  font-size: x-large;
+  padding-bottom: 2rem;
+}
 
-.album {
+.album .slideshow-container {
   position: relative;
 }
 
-.slideshow-container {
-  position: relative;
-  max-width: 100%;
-  overflow: hidden;
-}
-
-.slides {
+.album .slideshow-container .slides {
   display: flex;
-  transition: transform 0.5s ease;
 }
 
-.slide {
-  min-width: 100%;
-  transition: transform 0.5s ease;
+.album .slideshow-container .slides .slide {
+  width: 100%;
+  height: 100%;
 }
 
-.slideshow-container button {
+.album .slideshow-container .slides .slide figure {
+  height: 50vh;
+  width: 50vw;
+}
+
+.album .slideshow-container .slides .slide figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.album .slideshow-container button {
   position: absolute;
   top: 50%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -109,32 +127,63 @@
   right: 0;
 }
 
+.feedback {
+  padding: 2rem;
+  background: linear-gradient(wheat, #F3F1E0);
+}
+
+.feedback h2 {
+  text-align: center;
+  padding: 2rem;
+  font-size: x-large;
+  font-weight: 700;
+}
+
+.feedback .reviews .review {
+  margin-bottom: 2rem;
+  border: 3px solid white;
+  padding: 1rem;
+}
+
+.feedback .reviews .review .reviewer{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.feedback .reviews .review .reviewer img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.feedback .reviews .review p {
+  font-style: italic;
+}
+
 
 
 @media screen and (min-width: 1024px) {
   .hero {
-    padding: 10vh 10vw;
+    padding: 2rem;
     background-color: wheat;
     display: grid;
     gap: 2rem;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    align-items: center;
   }
   
   .hero figure {
-    grid-column: 1;
+    grid-column: 2;
     grid-row: 1;
+    justify-self: center;
   }
   
   .post {
-    grid-column: 2;
+    grid-column: 1;
     grid-row: 1;
-  }
-}
-
-@media all and (min-width: 1280px) {
-  .explore {
-    background-position-y: 25%;
+    justify-self: end;
   }
 }

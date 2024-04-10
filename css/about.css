@@ -25,7 +25,7 @@
   color: white;
 }
 
-#about section:nth-child(1) {
+#about section:first-child, #about section:last-child {
   background-color: wheat;
 }
 
