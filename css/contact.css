@@ -29,13 +29,13 @@
   form input,
   textarea {
     background-color: rgba(169, 169, 169, 0.5);
-    /* Grey color with 50% transparency */
     border: 1px solid #ccc;
-    /* Add border for better visibility */
     padding: 5px;
-    /* Add padding for better appearance */
     border-radius: 4px;
-    /* Add rounded corners */
+  }
+
+  ::placeholder {
+    color: rgb(215, 215, 215); /* Set the color to white */
   }
   
   form input[type="submit"] {
